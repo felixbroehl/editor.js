@@ -297,6 +297,11 @@ export default class UI extends Module {
       id: styleTagId,
       textContent: styles.toString(),
     });
+    
+    if (window.editorJsCSS === undefined) {
+      window.editorJsCSS = '';
+    }
+    window.editorJsCSS += styles.toString();
 
     /**
      * Append styles at the top of HEAD tag
