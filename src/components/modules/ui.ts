@@ -17,6 +17,8 @@ import Selection from '../selection';
 import Block from '../block';
 import Flipper from '../flipper';
 
+declare var window: any;
+
 /**
  * @class
  *
